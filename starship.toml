@@ -1,15 +1,13 @@
 format = """
-[](#9A348E)\
+[ ](bg:#9A348E)\
 $username\
 [](bg:#DA627D fg:#9A348E)\
 $directory\
-[](fg:#DA627D bg:#FCA17D)\
+[](bg:#DA627D fg:#9A348E)\
 $git_branch\
 $git_status\
-[](fg:#FCA17D bg:#86BBD8)\
-[](fg:#86BBD8 bg:#06969A)\
-$time\
-[ ](fg:#33658A)\
+[](fg:#DA627D bg:#FCA17D)\
+[](fg:#DA627D bg:#FCA17D)\
 """
 
 # Disable the blank line at the start of the prompt
@@ -57,9 +55,3 @@ format = '[ $symbol $branch ]($style)'
 [git_status]
 style = "bg:#FCA17D"
 format = '[$all_status$ahead_behind ]($style)'
-
-[time]
-disabled = false
-time_format = "%R" # Hour:Minute Format
-style = "bg:#33658A"
-format = '[ ♥ $time ]($style)'
